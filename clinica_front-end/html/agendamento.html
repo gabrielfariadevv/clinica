@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Consulta - Clínica de Psicologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agendar Consulta</h1>
+    </header>
+    <main>
+        <form action="/consulta/agendar" method="post">
+            <label for="paciente">Paciente:</label>
+            <select id="paciente" name="paciente" required>
+                <option value="">Selecione um paciente</option>
+            </select>
+
+            <label for="dataConsulta">Data:</label>
+            <input type="date" id="dataConsulta" name="dataConsulta" required>
+
+            <label for="horaConsulta">Hora:</label>
+            <input type="time" id="horaConsulta" name="horaConsulta" required>
+
+            <label for="psicologo">Psicólogo:</label>
+            <select id="psicologo" name="psicologo" required>
+                <option value="">Selecione um psicólogo</option>
+            </select>
+
+            <label for="observacoes">Observações:</label>
+            <textarea id="observacoes" name="observacoes"></textarea>
+            
+            <button type="submit">Agendar</button>
+        </form>
+    </main>
+</body>
+</html>

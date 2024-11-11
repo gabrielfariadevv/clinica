@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Consultas - Clínica de Psicologia</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Relatório de Consultas</h1>
+    </header>
+    <main>
+        <form action="/consulta/relatorio" method="post">
+            <label for="paciente">Paciente:</label>
+            <select id="paciente" name="paciente">
+                <option value="">Selecione um paciente</option>
+            </select>
+            <label for="dataInicio">Data de Início:</label>
+            <input type="date" id="dataInicio" name="dataInicio">
+
+            <label for="dataFim">Data de Fim:</label>
+            <input type="date" id="dataFim" name="dataFim">
+
+            <button type="submit">Gerar Relatório</button>
+        </form>
+
+        <section class="relatorio">
+            <h2>Consultas Realizadas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Hora</th>
+                        <th>Paciente</th>
+                        <th>Psicólogo</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
